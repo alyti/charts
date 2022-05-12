@@ -1,0 +1,42 @@
+apiVersion: v1
+entries:
+  misskey:
+  - apiVersion: v2
+    appVersion: 12.110.1
+    created: "2022-05-12T06:17:27.881909384Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.5.3
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.9.2
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.0.2
+    description: 'Misskey is a decentralized microblogging platform born on Earth.  Since
+      it exists within the Fediverse (a universe where various social media platforms
+      are organized), it is mutually linked with other social media platforms.  '
+    digest: 7201db6dd695c4d9902d858342e6c92fcdae8f83714629957442997c699609c8
+    home: https://github.com/alyti/charts/tree/main/charts/misskey
+    keywords:
+    - misskey
+    - fediverse
+    - mastodon
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: alyti@users.noreply.github.com
+      name: alyti
+    name: misskey
+    sources:
+    - https://github.com/misskey-dev/misskey
+    urls:
+    - https://github.com/alyti/charts/releases/download/misskey-1.0.0/misskey-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-05-12T06:17:27.881919984Z"
