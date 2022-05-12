@@ -1,0 +1,4 @@
+# Chart dependencies
+charts/*/charts
+charts/*/Chart.lock
+charts/*/local.yaml
